@@ -12,6 +12,7 @@ from .views import (
     get_post_comments
 )
 
+
 urlpatterns = [
     path('', home, name='home'),
     path('get-posts/<int:num_posts>', get_posts, name='get-posts'),
@@ -25,3 +26,5 @@ urlpatterns = [
     path('like-unlike/', like_unlike_view, name='like-unlike'),
     path('comment/', comment_view, name='comment'),
 ]
+
+
