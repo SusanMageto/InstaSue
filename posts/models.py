@@ -99,4 +99,3 @@ class Comment(models.Model):
             return f"{m} minutes ago"
         else:
             return f"{s} seconds ago"
-
