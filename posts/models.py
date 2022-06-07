@@ -13,8 +13,10 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(Profile, on_delete=models.CASCADE)
 
+
     def __str__(self):
         return f"Post of {self.author.user.username}"
+
 
     class Meta:
         ordering = ['-created']
@@ -35,6 +37,7 @@ class Post(models.Model):
             return f"{self.liked.count()} like"
         return f"{self.liked.count()} likes"
 
+
     @property
     def no_of_comments(self):
         comments = Comment.objects.filter(post=self).count()
@@ -43,6 +46,7 @@ class Post(models.Model):
         elif comments == 1:
             return f"View {comments} comment"
         return f"View all {comments} comments"
+
 
     @property
     def time_diff(self):
