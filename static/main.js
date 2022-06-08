@@ -20,6 +20,7 @@ const getCookie = (name) => {
     }
     return cookieValue;
 }
+
 const csrftoken = getCookie('csrftoken');
 
 const likeUnlikePosts = () => {
