@@ -94,6 +94,8 @@ def current_user_posts_view(request, user_id, num_posts):
         return JsonResponse({'data': data[lower:upper], 'length': Post.objects.filter(author=author).all().count()})
 
 
+
+
 def get_user_posts_view(request, num_posts):
     if request.is_ajax():
         visible = 10
@@ -115,6 +117,7 @@ def get_user_posts_view(request, num_posts):
             }
             data.append(item)
         return JsonResponse({'data': data[lower:upper], 'length': Post.objects.filter(author=request.user.profile).all().count()})
+
 
 
 def user_profile_details_view(request, user_id):
