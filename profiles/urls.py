@@ -16,6 +16,7 @@ from .views import (
     follow_unfollow_view
 )
 
+
 urlpatterns = [
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
