@@ -1,11 +1,12 @@
+#!/usr/bin/env python
+"""Django's command-line utility for administrative tasks."""
 import os
 import sys
-from dotenv import load_dotenv
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'instagram_clone.settings')
-    load_dotenv()
+    """Run administrative tasks."""
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ig_prj.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
