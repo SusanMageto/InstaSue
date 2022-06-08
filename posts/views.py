@@ -129,6 +129,7 @@ def get_post_comments(request, pk):
     return JsonResponse({'data': data})
 
 
+
 def get_post_details(request, pk):
     post = Post.objects.get(pk=pk)
     comments = Comment.objects.filter(post=post).all()
@@ -147,6 +148,7 @@ def get_post_details(request, pk):
         'is_author': post.author == request.user.profile
     }
     return JsonResponse({'data': data})
+
 
 
 def post_update_view(request, pk):
