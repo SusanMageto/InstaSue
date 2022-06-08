@@ -12,6 +12,7 @@ class Profile(models.Model):
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 
+
     def __str__(self):
         return f'Profile of {self.user.username}'
 
@@ -30,6 +31,7 @@ class Profile(models.Model):
             newsize = (600, 600)
             img = im.resize(newsize)
             img.save(self.image.path)
+
 
 
 class Follower(models.Model):
