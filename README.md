@@ -44,7 +44,6 @@ Open the application on your browser `127.0.0.1:8000`.
 
 ## Contact Information 
 
-If you have any question or contributions, please email me at paulkush7777@gmail.com
-
+If you have any question or contributions, please email me at susanmageto.mageto@gmail.com
 ## License
 * *MIT License*
