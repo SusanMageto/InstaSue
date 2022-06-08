@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'wetuilserhesasdmgfxm'
 
 # Set Debug
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = [
 '*'
 ]
@@ -84,7 +84,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/Kolkata'
+TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
